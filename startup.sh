@@ -7,7 +7,7 @@ openvpn --config /etc/openvpn/client.ovpn --daemon
 
 # start cron
 chmod 775 /ovpn_healthcheck.sh
-cron && tail -f /var/log/cron.log
+cron
 
 # run-services.sh - It is a Teamcity Agent startup script
 sh /run-services.sh
